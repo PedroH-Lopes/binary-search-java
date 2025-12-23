@@ -24,12 +24,6 @@ public class binary_search {
             } else  {
                 last = mid;
             }
-
-            System.out.println(vetor[mid]);
-            System.out.println(mid);
-            System.out.println(first);
-            System.out.println(last);
-            System.out.println("");
         }
 
         if (first > last) {
