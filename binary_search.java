@@ -26,6 +26,8 @@ public class binary_search {
             }
         }
 
+        System.out.println(last);
+        System.out.println();
         if (first > last) {
             System.out.println("The value " + value + " is not on the list");
         }
