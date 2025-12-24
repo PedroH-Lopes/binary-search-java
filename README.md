@@ -1,7 +1,7 @@
 # Binary Search in Java
 
 This project implement the Binary Search algorithm in Java.
-This was made as part of my stuides about algorithms.
+This was made as part of my studies about algorithms.
 
 ## How to Run
 
