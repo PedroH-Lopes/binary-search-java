@@ -12,10 +12,10 @@ git clone https://github.com/seu-usuario/binary-search-java.git
 
 2. Compile the project:
 ```bash
-javac BinarySearch.java
+javac binary_search.java
 ```
 
 3. Run the application:
 ```bash
-java BinarySearch
+java binary_search
 ```
