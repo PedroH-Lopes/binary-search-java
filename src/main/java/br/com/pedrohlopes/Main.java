@@ -3,19 +3,35 @@ package br.com.pedrohlopes;
 import java.util.Scanner;
 
 public class Main {
-    static void main() {
+    static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        BinarySearch binarySearch = new BinarySearch();
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int searchedValue;
 
-        System.out.print("Type the value you wanna search: ");
+        while (true) {
+            System.out.print("Type the value you wanna search or type 'end' to quit: ");
+            String input = scanner.nextLine();
 
-        try {
-            int value = Integer.parseInt(scanner.nextLine());
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid. Type a integer");
+            if (input.equals("end")) {
+                System.out.println("Finishing...");
+                break;
+            }
+
+            try {
+                searchedValue = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid. Type an integer");
+                continue;
+            }
+
+            int result = binarySearch.doBinarySearch(array, searchedValue);
+
+            if (result >= 0) {
+                System.out.println("The searched value: " + searchedValue + " was found on index: " + result);
+            } else {
+                System.out.println("Value not found");
+            }
         }
-
-        int first = 0;
-        int last = array.length - 1;
     }
 }
