@@ -24,8 +24,9 @@ java -cp out br.com.pedrohlopes.Main
 ```
 
 ## Project structure
-
+```
 src/
  └── main/java/br/com/pedrohlopes/
      ├── Main.java
      └── BinarySearch.java
+```
