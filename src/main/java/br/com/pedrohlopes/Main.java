@@ -6,7 +6,7 @@ public class Main {
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         BinarySearch binarySearch = new BinarySearch();
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] array = {-2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int searchedValue;
 
         while (true) {
@@ -28,7 +28,7 @@ public class Main {
             int result = binarySearch.doBinarySearch(array, searchedValue);
 
             if (result >= 0) {
-                System.out.println("The searched value: " + searchedValue + " was found on index: " + result);
+                System.out.println("The searched value " + searchedValue + " was found on index: " + result);
             } else {
                 System.out.println("Value not found");
             }
